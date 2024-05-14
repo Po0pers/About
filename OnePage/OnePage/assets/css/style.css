@@ -5,15 +5,17 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #020202;
 }
-
+body{
+  background-color: rgb(255, 255, 255);
+}
 a {
   color: #2487ce;
   text-decoration: none;
@@ -24,11 +26,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+
 h6 {
   font-family: "Raleway", sans-serif;
 }
@@ -52,7 +50,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #060606;
   line-height: 0;
 }
 
@@ -77,7 +75,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #866a6a;
 }
 
 #preloader:before {
@@ -86,8 +84,8 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #2487ce;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-top-color: #865f5f;
+  border-bottom-color: #6e5e5e;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -118,29 +116,30 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: #fff;
+  background: lightblue;
   z-index: 997;
   padding: 15px 0;
-  border-bottom: 1px solid #e6f2fb;
+  border-bottom: 1px solid #0b0b0b;
 }
 
+
 #header.header-scrolled {
-  border-color: #fff;
+  border-color: #080808;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
 #header .logo {
-  font-size: 28px;
+  font-size: 50px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
 }
 
 #header .logo a {
-  color: #16507b;
+  color: #060606;
 }
 
 #header .logo img {
@@ -184,7 +183,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #ab1717;
 }
 
 @media (max-width: 991px) {
@@ -223,7 +222,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #1fbfec;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -254,7 +253,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #26b9e6;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -294,7 +293,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f8fbfe;
+  background-color: #b5c5cd;
 }
 
 .section-title {
@@ -308,13 +307,13 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #124265;
+  color: #000000;
 }
 
 .section-title p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #919191;
+  color: #060606;
 }
 
 /*--------------------------------------------------------------
@@ -351,32 +350,49 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  position:relative;
+ 
 }
-
+.portfolio-details .portfolio-details-slider {
+  position: relative;
+  width:100%;
+  margin:0 ;
+  box-shadow: 0px 2px 15px rgba(2, 2, 2, 0.568);
+}
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  display:block;
+  margin-right:25%;
+  margin-left: 0;
+  
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px; /* Adjust this value as needed */
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #030303;
   opacity: 1;
-  border: 1px solid #2487ce;
+  border: 1px solid #647d8f;
+  margin: 0 5px; /* Adjust this value as needed */
+ 
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #2487ce;
+  background-color: #adbdc7;
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(18, 66, 101, 0.08);
+  padding: px;
+  box-shadow: 0px 0 30px rgba(14, 13, 13, 0.626);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -384,12 +400,12 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #cb1212;
 }
 
 .portfolio-details .portfolio-info ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   font-size: 15px;
 }
 
@@ -398,17 +414,19 @@ section {
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding-top: 30px; /* Existing padding-top value */
+  background-color: lightblue; /* Change the background color to light blue */
 }
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-left: 140px;
 }
 
 .portfolio-details .portfolio-description p {
-  padding: 0;
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -419,8 +437,8 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 4px;
-  background: #FF8602;
-  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  background: lightblue;
+  box-shadow: 0px 2px 15px rgba(19, 19, 18, 0.568);
 }
 
 .team .member .member-img {
@@ -451,7 +469,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #2487ce;
+  color: #6f7a82;
 }
 
 .team .member .social i {
@@ -468,14 +486,14 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #124265;
+  color: #070707;
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #000000;
 }
 
 .team .member .member-info p {
@@ -502,7 +520,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f8fbfe;
+  background: #18abcb;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -515,7 +533,7 @@ section {
 
 .breadcrumbs h2 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .breadcrumbs ol {
